@@ -1,3 +1,12 @@
-<main>
-  <app-parent></app-parent>
-</main>
+<div>
+
+  <h1>Composant parent</h1>
+  
+  <app-enfant-simple [val]="burgers" [name]="'Composant enfant pour compter les burgers'"></app-enfant-simple>
+  <app-enfant-counter [val]="burgers" [name]="'Composant enfant pour ajout/suppression de burgers'" (changed)="burgerChanged($event)"></app-enfant-counter>
+  <app-enfant-counter [val]="pizzas" [name]="'Composant enfant pour ajout/suppression de pizzas'" (changed)="pizzaChanged($event)"></app-enfant-counter>
+  <app-drink-counter [drink]="drink" (changed)="drinkChanged($event)"></app-drink-counter>
+  
+  <b>total items: {{totalItems}}</b>
+  
+</div>

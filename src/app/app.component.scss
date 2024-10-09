@@ -1,0 +1,8 @@
+div {
+    border: solid 3px;
+    padding: 5px;
+    text-align: center;
+    background-color: lightgray;
+    height: 100vh;
+    box-sizing: border-box; /* Inclut les bordures et les paddings dans le calcul de la hauteur */
+}
